@@ -18,7 +18,7 @@ function App() {
     const [city, setCity] = useState('');
     const [loading, setLoading] = useState(true);
     const [apiError, setApiError] = useState('');
-    const cities = ['paris', 'new york', 'tokyo', 'seoul'];
+    const cities = ['paris', 'new york', 'beijing', 'tokyo', 'seoul'];
     const getCurrentLocation = () => {
         navigator.geolocation.getCurrentPosition((position) => {
             let lat = position.coords.latitude;
